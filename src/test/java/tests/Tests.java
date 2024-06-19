@@ -22,7 +22,7 @@ public class Tests {
 		  options.setBrowserName("chrome");
 		  options.setPlatform(Platform.LINUX);
 			try {
-				driver = new RemoteWebDriver(new URL("http://34.227.8.154"),options);
+				driver = new RemoteWebDriver(new URL("http://34.238.152.175"),options);
 			} catch (MalformedURLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
