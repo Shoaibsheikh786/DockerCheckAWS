@@ -15,18 +15,24 @@ public class Tests {
 	@Test
 	public void test1()
 	{
+		
+		//which machine, 
 		  DesiredCapabilities options=new DesiredCapabilities();
 
 	        // Create a new instance of the Chrome driver with the specified options
 	        //http://3.95.160.237/ui/
 		  options.setBrowserName("chrome");
 		  options.setPlatform(Platform.LINUX);
+		  
+		  
 			try {
-				driver = new RemoteWebDriver(new URL("http://35.175.244.1/"),options);
+				driver = new RemoteWebDriver(new URL("http://44.202.23.123"),options);
 			} catch (MalformedURLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+		
+	
 
 	        // Navigate to a web page
 	        driver.get("http://www.google.com");
@@ -38,30 +44,6 @@ public class Tests {
 	        driver.quit();
 	}
 	
-	@Test
-	public void test2()
-	{
-		  DesiredCapabilities options=new DesiredCapabilities();
-
-	        // Create a new instance of the Chrome driver with the specified options
-	        //http://3.95.160.237/ui/
-		  options.setBrowserName("chrome");
-		  options.setPlatform(Platform.LINUX);
-			try {
-				driver = new RemoteWebDriver(new URL("http://35.175.244.1/"),options);
-			} catch (MalformedURLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-
-	        // Navigate to a web page
-	        driver.get("http://www.facebook.com");
-
-	        // Print the title of the page
-	        System.out.println("Title: " + driver.getTitle());
-            System.out.println(driver.getCurrentUrl());
-	        // Close the browser
-	        driver.quit();
-	}
+	
 
 }
